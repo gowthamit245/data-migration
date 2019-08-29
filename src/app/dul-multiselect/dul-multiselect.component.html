@@ -1,0 +1,8 @@
+<div class="card w-100" >
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item p-0" *ngFor="let item of currentItem; let i = index;" >
+            <a href="" class="d-block text-body text-decoration-none {{item.selected}} py-2 pl-5" 
+            (click)="selectSingleItem(i,item.selected)">{{item.name}} -- {{item.selected}}</a>
+        </li>
+    </ul>
+</div>
